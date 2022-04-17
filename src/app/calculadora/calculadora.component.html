@@ -1,0 +1,44 @@
+
+<div id="comp">
+  <label for="display">
+    <input type="text" title="display" id="display" [value]="display" style="width: 200px; height: 60px; font-size: 50px; text-align: right;" />
+  </label>
+  <table>
+    <tbody>
+      <tr>
+        <td><app-my-button [myIcon]="'CE'" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'M'" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'%'" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'√'" (click)="onClickEvent($event)"></app-my-button></td>
+      </tr>
+
+      <tr>
+        <td><app-my-button [myIcon]="(7).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="(8).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="(9).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'/'" (click)="onClickEvent($event)"></app-my-button></td>
+      </tr>
+
+      <tr>
+        <td><app-my-button [myIcon]="(4).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="(5).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="(6).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'*'" (click)="onClickEvent($event)"></app-my-button></td>
+      </tr>
+
+      <tr>
+        <td><app-my-button [myIcon]="(1).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="(2).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="(3).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'-'" (click)="onClickEvent($event)"></app-my-button></td>
+      </tr>
+
+      <tr>
+        <td><app-my-button [myIcon]="(0).toString()" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'.'" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'='" (click)="onClickEvent($event)"></app-my-button></td>
+        <td><app-my-button [myIcon]="'+'" (click)="onClickEvent($event)"></app-my-button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
